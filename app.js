@@ -8,7 +8,7 @@ let weatherDesc = document.getElementById("weatherDesc");
 
 
 function getWeather(){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ weatherInput.value + '&appid=156af92f32ba09e4e0287fd07eb7ea36')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ weatherInput.value + '&units=imperial&appid=156af92f32ba09e4e0287fd07eb7ea36')
     .then(res => res.json())
     .then(data => {
         console.log(data)
